@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="oxygen"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oxy">
+				<Option output="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/oxy" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 oxy"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oxy/fast">
+				<Option output="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/oxy" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 oxy/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/CLion/Projects/Oxygen/src/generation.hpp">
+			<Option target="oxy"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion/Projects/Oxygen/src/main.cpp">
+			<Option target="oxy"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion/Projects/Oxygen/src/parser.hpp">
+			<Option target="oxy"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion/Projects/Oxygen/src/tokenization.hpp">
+			<Option target="oxy"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion/Projects/Oxygen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+/mnt/d/CLion/Projects/Oxygen/cmake-build-debug-wsl/CMakeFiles/oxy.dir
+/mnt/d/CLion/Projects/Oxygen/cmake-build-debug-wsl/CMakeFiles/edit_cache.dir
+/mnt/d/CLion/Projects/Oxygen/cmake-build-debug-wsl/CMakeFiles/rebuild_cache.dir

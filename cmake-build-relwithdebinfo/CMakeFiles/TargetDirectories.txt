@@ -1,0 +1,3 @@
+/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/CMakeFiles/oxy.dir
+/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/CMakeFiles/edit_cache.dir
+/mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo/CMakeFiles/rebuild_cache.dir
