@@ -8,6 +8,11 @@ enum class TokenType {
     exit, //basic return TokenType
     int_lit, //TokenType for an integer literal
     semi, //TokenType to represent a semicolon i.e. ';'
+    open_param,
+    close_param,
+    let,
+    eq,
+    ident
 };
 
 struct Token {
@@ -39,9 +44,15 @@ public:
                     buf.clear();
                     continue;
                 }
+                else if (buf=="let") {
+                    tokens.push_back({.type= TokenType::let,.value = buf});
+                    buf.clear();
+                    continue;
+                }
                 else {
-                    std::cerr<<"something is wrong!"<<std::endl;
-                    exit(EXIT_FAILURE);
+                    tokens.push_back({.type= TokenType::ident,.value = buf});
+                    buf.clear();
+                    continue;
                 }
             }
             else if (std::isdigit(peek().value())) {
@@ -53,9 +64,22 @@ public:
                 buf.clear();
                 continue;
             }
+            else if (peek().value()=='(') {
+                consume();
+                tokens.push_back({.type= TokenType::open_param});
+            }
+            else if (peek().value()==')') {
+                consume();
+                tokens.push_back({.type= TokenType::close_param});
+            }
             else if (peek().value()==';') {
                 consume();
                 tokens.push_back({.type= TokenType::semi});
+                continue;
+            }
+            else if (peek().value()=='=') {
+                consume();
+                tokens.push_back({.type= TokenType::eq});
                 continue;
             }
             else if (std::isspace(peek().value())) {
@@ -73,12 +97,12 @@ public:
 
 private:
 
-    [[nodiscard]] inline  std::optional<char> peek(int ahead=1) const{
-        if (m_index + ahead > m_src.length()) {
+    [[nodiscard]] inline  std::optional<char> peek(int offset=0) const{
+        if (m_index + offset >= m_src.length()) {
             return {};
         }
         else {
-            return m_src.at(m_index);
+            return m_src.at(m_index+offset);
         }
     }
 

@@ -27,33 +27,23 @@ int main(int argc, char* argv[])
     //3. now we need to lex "contents"
     //4. for that we'll be needing a list of tokens, which we will define in an enum class
 
-    std::cout<<contents<<std::endl;
-
     Tokenizer tokenizer(std::move(contents));
     std::vector<Token> tokens=tokenizer.tokenize(contents);
 
-    for(auto token:tokens) {
-        if (token.type==TokenType::exit)
-            std::cout<<"exit "<<std::endl;
-        else if (token.type==TokenType::int_lit)
-            std::cout<<"int_lit: "<<token.value.value()<<std::endl;
-        else
-            std::cout<<"semi "<<std::endl;
-    }
 
     Parser parser(std::move(tokens));
-    std::optional<NodeExit> tree=parser.parse();
+    std::optional<NodeProg> prog=parser.parse_prog();
 
-    if (!tree.has_value()) {
-        std::cout<<"Error parsing tree.\n";
+    if (!prog.has_value()) {
+        std::cout<<"Invalid Program.\n";
         exit(EXIT_FAILURE);
     }
 
-    Generator generator(tree.value());
+    Generator generator(prog.value());
 
     {
         std::fstream file("out.asm",std::ios::out);
-        file<<generator.generate();
+        file<<generator.gen_prog();
     }
 
     system("nasm -felf64 out.asm");

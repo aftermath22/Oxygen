@@ -165,5 +165,13 @@ CMakeFiles/oxy.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /mnt/d/CLion/Projects/Oxygen/src/./generation.hpp \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h \
  /mnt/d/CLion/Projects/Oxygen/src/./parser.hpp \
+ /usr/include/c++/13/variant /usr/include/c++/13/bits/parse_numbers.h \
  /mnt/d/CLion/Projects/Oxygen/src/./tokenization.hpp
