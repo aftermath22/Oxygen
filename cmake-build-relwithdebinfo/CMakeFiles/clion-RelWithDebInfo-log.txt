@@ -1,4 +1,4 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "Unix Makefiles" -S /mnt/d/CLion/Projects/Oxygen -B /mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo
--- Configuring done (0.8s)
--- Generating done (1.3s)
+-- Configuring done (0.5s)
+-- Generating done (0.4s)
 -- Build files have been written to: /mnt/d/CLion/Projects/Oxygen/cmake-build-relwithdebinfo

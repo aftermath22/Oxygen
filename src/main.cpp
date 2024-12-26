@@ -1,21 +1,19 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <optional>
 #include <sstream>
 #include <vector>
 
-#include "./generation.hpp"
+#include "generation.hpp"
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-    // 1. at least 2 command line arguments must be present at all times
-    if (argc != 2)
-    {
-        std::cerr << "Incorrect usage.\nCorrect usage is: oxy <input.oxy>" << std::endl;
+    if (argc != 2) {
+        std::cerr << "Incorrect usage. Correct usage is..." << std::endl;
+        std::cerr << "hydro <input.hy>" << std::endl;
         return EXIT_FAILURE;
     }
 
-    // 2. "contents" will contain the whole code written in the input file as it is
     std::string contents;
     {
         std::stringstream contents_stream;
@@ -24,24 +22,19 @@ int main(int argc, char *argv[])
         contents = contents_stream.str();
     }
 
-    // 3. now we need to lex "contents"
-    // 4. for that we'll be needing a list of tokens, which we will define in an enum class
-
     Tokenizer tokenizer(std::move(contents));
-    std::vector<Token> tokens = tokenizer.tokenize(contents);
+    std::vector<Token> tokens = tokenizer.tokenize();
 
     Parser parser(std::move(tokens));
     std::optional<NodeProg> prog = parser.parse_prog();
 
-    if (!prog.has_value())
-    {
-        std::cout << "Invalid Program.\n";
+    if (!prog.has_value()) {
+        std::cerr << "Invalid program" << std::endl;
         exit(EXIT_FAILURE);
     }
 
-    Generator generator(prog.value());
-
     {
+        Generator generator(prog.value());
         std::fstream file("out.asm", std::ios::out);
         file << generator.gen_prog();
     }

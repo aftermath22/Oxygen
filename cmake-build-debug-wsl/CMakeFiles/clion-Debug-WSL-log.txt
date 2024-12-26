@@ -1,4 +1,4 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /mnt/d/CLion/Projects/Oxygen -B /mnt/d/CLion/Projects/Oxygen/cmake-build-debug-wsl
--- Configuring done (0.8s)
--- Generating done (0.9s)
+-- Configuring done (0.6s)
+-- Generating done (0.4s)
 -- Build files have been written to: /mnt/d/CLion/Projects/Oxygen/cmake-build-debug-wsl
