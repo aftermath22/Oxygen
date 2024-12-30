@@ -1,6 +1,7 @@
 # Oxygen Programming Language
 
-Oxygen is a small, compiled programming language that targets x86_64 assembly. It features basic arithmetic operations, variables, control flow, and scoping rules.
+Oxygen is a small, compiled programming language that targets x86_64 assembly. It features basic arithmetic operations, variables, control flow, and scoping rules. \
+I have learned most of the things from a youtube tutorial by 'Pixeled' and this is the [link](https://www.youtube.com/watch?v=vcSijrRsrY0&list=PLUDlas_Zy_qC7c5tCgTMYq2idyyT241qs) to his playlist.
 
 ## Table of Contents
 - [Overview](#overview)
